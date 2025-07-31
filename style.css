@@ -5,20 +5,22 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #4b6cb7, #182848);
+  background: linear-gradient(135deg, #000000, #2c2c2c); /* Black to dark gray */
   color: white;
   text-align: center;
 }
 
+/* Container with subtle glass effect */
 .container {
   max-width: 700px;
   margin: 80px auto;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05); /* Transparent glass */
   border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
 
+/* Profile image */
 .profile-pic {
   width: 150px;
   height: 150px;
@@ -26,41 +28,47 @@ body {
   object-fit: cover;
   border: 4px solid white;
   margin-bottom: 20px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, border 0.3s ease;
 }
-
 .profile-pic:hover {
   transform: scale(1.05);
+  border: 4px solid #ff6600; /* Orange highlight on hover */
 }
 
+/* Headings with accent colors */
 h1 {
   font-size: 2em;
   margin-bottom: 5px;
+  color: #ff6600; /* Bright orange */
 }
 
 h2 {
   font-weight: 300;
   margin-bottom: 10px;
+  color: #b22222; /* Wine red */
 }
 
 .info {
   margin: 5px 0;
   font-size: 1.1em;
+  color: #ffffff; /* White text */
 }
 
+/* Links as stylish buttons */
 .links a {
   display: inline-block;
   margin: 10px;
   padding: 8px 15px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   color: white;
   text-decoration: none;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .links a:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background: #ff6600;
+  color: black;
 }
 
 hr {
@@ -68,12 +76,18 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Courses section */
+h3 {
+  color: #ff6600; /* Orange section titles */
+}
+
 .courses {
   font-size: 1.2em;
+  color: #b22222; /* Wine red */
 }
 
 .highlight {
-  color: #ffd700;
+  color: #ff6600; /* Bright orange */
   font-weight: bold;
 }
 
